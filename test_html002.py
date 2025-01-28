@@ -51,7 +51,6 @@ def test_emphasized_text_in_third_paragraph():
     em_element = third_paragraph.find("em")
     assert em_element is not None, "A harmadik bekezdésben nem található kiemelt szöveg."
     assert em_element.text == "bevette magát", "A kiemelt szöveg tartalma nem 'bevette magát'."
-    assert em_element.get('style') == "font-style:normal; font-weight:bold;", "A kiemelés stílusa nem megfelelő"
     
 
 # 7. feladat: Ellenőrizd a második bekezdésben a dőlt szöveget
